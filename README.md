@@ -3,15 +3,15 @@ A vending machine needs to manage different states, including "Idle", "ItemSelec
 
 ## Requirements:
 ***Idle State:***
-Allow item selection./
+Allow item selection.\
 Disallow dispensing items and inserting coins.
 
 ***ItemSelected State:***
-Allow inserting coins and dispensing items./
+Allow inserting coins and dispensing items.\
 Disallow item selection.
 
 ***Dispensing State:***
-Allow no operations./
+Allow no operations.\
 Automatically transition back to the "Idle" state after dispensing is complete.
 ***OutOfOrder State:***
 Disallow all operations.
@@ -31,8 +31,8 @@ Define an interface VendingMachineState with methods for common actions like sel
 Each concrete state class implements the VendingMachineState interface, providing specific behavior for its respective state. For example, the IdleState class would allow item selection, while the OutOfOrderState wouldn't allow any operations.
 
 ***Update VendingMachine Class:***
-Include attributes for item inventory and balance./
-Remove state-specific logic from the VendingMachine class./
-Introduce a reference to the current VendingMachineState object./
+Include attributes for item inventory and balance.\
+Remove state-specific logic from the VendingMachine class.\
+Introduce a reference to the current VendingMachineState object.\
 Delegate actions like selectItem, insertCoin, dispenseItem, and setOutOfOrder to the current state object through its corresponding methods.
 
