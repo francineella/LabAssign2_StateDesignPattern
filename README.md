@@ -36,3 +36,4 @@ Remove state-specific logic from the VendingMachine class.\
 Introduce a reference to the current VendingMachineState object.\
 Delegate actions like selectItem, insertCoin, dispenseItem, and setOutOfOrder to the current state object through its corresponding methods.
 
+![UML_StatePatternDesign](https://github.com/user-attachments/assets/16ebe6c7-53b5-451f-aeea-3afe980aadee)
